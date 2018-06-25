@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Salon Nameštaja</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Salon Nameštaja</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Početna</a>
+        </li>
+        <li class="active">
+          <a href="galerija.html">Galerija</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="galerija.html">Izdvajamo
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="zaspavacusobu.html">Za spavaću sobu</a>
+            </li>
+            <li>
+              <a href="zadnevnusobu.html">Za dnevnu sobu</a>
+            </li>
+            <li>
+              <a href="zakupatilo.html">Za kupatilo</a>
+            </li>
+            <li>
+              <a href="zabastu.html">Za baštu</a>
+            </li>
+
+          </ul>
+          <li>
+            <a href="onama.html">O nama</a>
+          </li>
+        </li>
+        <li>
+          <a href="kontakt.html">Kontakt</a>
+        </li>
+        <li >
+          <a href="prijavise.html">Prijavi se</a>
+        </li>
+        <li>
+          <a href="registrujse.html">Registruj se</a>
+        </li>
+      </ul>
+     <ul class="social-nav right">
+        <li><a href="#" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank" title="Google plus" rel="nofollow" class="google"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank" title="Pinterest" rel="nofollow" class="pinterest"><i class="fa fa-pinterest"></i></a></li>        
+    </ul>
+    </div>
+  </nav>
+<br>
+<div class="container-fluid">
+  <div class="center">
+  <h2>Pogledajte Našu Galeriju Slika</h2>
+  <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
+</div>
+  <div class="row">
+    <div class="container">
+        <div class="row">
+        
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">Sve</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>
+        <br/>
+            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="img/gallery/1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <img src="img/gallery/2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="img/gallery/3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="img/gallery/4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="img/gallery/5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="img/gallery/6.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="img/gallery/7.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="img/gallery/8.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="img/gallery/9.jpg" class="img-responsive">
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+</header>
+
+</div>
+<div class="footer">
+
+ <footer>
+<div class="row">
+<div class="col-lg-12">
+<div class="col-lg-3 col-md-6">
+<div class="container">
+      <div class="col-lg-3">
+            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+            <p style="text-align:center; margin-top:20px;">
+              <img src="img/f1.jpg" class="img-responsive" alt="namestaj">
+            </p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+       <div class="col-lg-3">
+            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+            <p style="text-align:center; margin-top:20px;">
+              <img src="img/f2.jpg" class="img-responsive" alt="">
+            </p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+            
+
+            <div class="col-lg-3 col-md-6">
+      <h3>Categories:</h3>
+                <ul>
+        <li><a href=""><i class="fa fa-file"></i>Pocetna</a></li>
+        <li><a href=""><i class="fa fa-android"></i>O nama</a></li>
+        <li><a href=""><i class="fa fa-code"></i>Kontakt</a></li>
+        <li><a href=""><i class="fa fa-code"></i>Prijavi se</a></li>
+        <li><a href=""><i class="fa fa-book"></i>Registruj se</a></li>
+        </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3>Contact:</h3>
+        <p>Have a question or feedback? Contact me!</p>
+        <p><a href="kontakt.html" title="Contact me!"><i class="fa fa-envelope"></i> Contact</a></p>
+            <h3>Follow:</h3>
+      
+      
+<a href="" id="gh" target="_blank" title="Twitter"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+Twitter</a>
+<a href=""  target="_blank" title="GitHub"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-github fa-stack-1x"></i>
+</span>
+Facebook</a>
+
+      </div>
+      <br/>
+           
+      <br/>  
+        <hr>
+      </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+1. Projekat treba da sadrzi 10 web stranica
+	-Pocetna
+	-Galerija
+		-Drveni namestaj
+		- Za dvoriste
+		- Za spavacu sobu
+	-O nama
+	-Stolarija
+	-Materijali
+	-Kontakt
+	-Prijavi se
+
+2. Tehnologije:
+HTML
+CSS
+JS
+
+3.Obavezno definisati header svake stranice
+
+4.Implementacija kontakt forme
+
+5. Implementcaija Login forme
+
+6. Linkovanje ka drustvenim mrezama
